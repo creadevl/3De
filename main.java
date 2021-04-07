@@ -6,12 +6,14 @@ import java.util.Scanner; // reads text
  */
 class main {
   public static void main(String[] args) {
-      System.out.println("3De -- Powered by Java.\nVersion 0.0.1\nCreated by Creative Development [ https://github.com/creadevl ]\nProtected by the MIT LICENSE\n"); // Display the string.
+      System.out.println("3De -- Powered by Java.\nVersion 0.0.2\nCreated by Creative Development [ https://github.com/creadevl ]\nProtected by the MIT LICENSE\n"); // Display the string.
       try {
           if (args[0].equals("about")) {
               loadinternaltext("about");
           }else if (args[0].equals("notevil")) {
               loadinternaltext("credits");
+          }else if (args[0].equals("loadgame")) {
+            environment.loadgame(args[1]);
           }
       } catch (java.lang.ArrayIndexOutOfBoundsException e) {
           System.err.println("[MAIN:Error]:No commands detected. Exiting...");
