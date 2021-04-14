@@ -21,4 +21,8 @@ public class debug {
         }
 
     }
+    public static void ssdm(){
+      System.out.println("SUPERSECRETDEBUGMODE=ON");
+      
+    }
 }

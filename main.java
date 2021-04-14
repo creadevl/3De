@@ -13,7 +13,9 @@ class main {
           }else if (args[0].equals("notevil")) {
               loadinternaltext("credits");
           }else if (args[0].equals("loadgame")) {
-            environment.loadgame(args[1]);
+            environment.loadgame(args[1],args[2],args[3]);
+          }else if (args[0].equals("super-secret-debug-mode")) {
+            debug.ssdm();
           }
       } catch (java.lang.ArrayIndexOutOfBoundsException e) {
           System.err.println("[MAIN:Error]:No commands detected. Exiting...");
